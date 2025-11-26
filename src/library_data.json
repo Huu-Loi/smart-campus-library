@@ -1,0 +1,13 @@
+{
+    "books": [
+        {
+            "id": "dfd269e0",
+            "title": "Mem",
+            "author": "Sofy",
+            "year": "2025",
+            "available": true
+        }
+    ],
+    "members": [],
+    "loans": []
+}
