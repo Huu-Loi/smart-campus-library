@@ -7,10 +7,9 @@ Library Management System is built in Python, running on command line interface 
 The system helps the library manage books, users and the borrowing and returning process simply and effectively.
 
 ---
+1. Features
 
-## 1. Features
-
-### Books Module (Leader)
+Books Module (Leader)
 - Add new book
 - Edit book
 - Delete book
@@ -18,13 +17,13 @@ The system helps the library manage books, users and the borrowing and returning
 - Auto generate ID
 - Book status: `available = true/false`
 
-### Members Module (Team Member 1)
+Members Module (Contribute 1)
 - Add member
 - Edit information
 - Delete member
 - View member list
 
-### Loans Module (Leader)
+Loans Module (Leader)
 - Borrow book
 - Return book
 - Check book status before borrowing
@@ -32,7 +31,7 @@ The system helps the library manage books, users and the borrowing and returning
 - Automatically update `available`
 - Save borrowing/return history to JSON
 
-### Reporting Module (Team Member 2)
+Reporting Module (Contribute 2)
 - Book statistics
 - Borrowing statistics
 - Export basic reports
@@ -40,3 +39,4 @@ The system helps the library manage books, users and the borrowing and returning
 ---
 
 ## 🗂 2. Project Structure
+
