@@ -4,9 +4,7 @@ import uuid
 def generate_id():
     return str(uuid.uuid4())[:8]
 
-# ============================
-# BOOKS MENU
-# ============================
+# Books menu
 
 def books_menu():
     while True:
@@ -34,9 +32,7 @@ def books_menu():
         else:
             print("Invalid choice!")
 
-# ============================
-# CRUD FUNCTIONS
-# ============================
+# Crud Functions
 
 def add_book():
     data = load_data()
@@ -96,7 +92,7 @@ def delete_book():
     else:
         print("Book not found.")
 
-# SEARCH FUNCTION
+# Search Function
 
 def search_book():
     data = load_data()
@@ -117,3 +113,4 @@ def search_book():
     for b in results:
         status = "Available" if b["available"] else "Borrowed"
         print(f"[{b['id']}] {b['title']} - {b['author']} | {b['year']} | {status}")
+
