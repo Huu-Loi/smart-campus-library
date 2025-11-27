@@ -38,5 +38,6 @@ Reporting Module (Contribute 2)
 
 ---
 
-## 🗂 2. Project Structure
+2. Project Structure
+
 
