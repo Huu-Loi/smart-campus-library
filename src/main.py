@@ -1,5 +1,6 @@
 from books import books_menu
 from loans import loans_menu
+from books import books_menu as books_management_menu
 
 def main():
     while True:
@@ -24,3 +25,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+def books_menu():
+    """Books menu - IMPLEMENTED BY CONTRIBUTOR 1"""
+    global books
+    books_management_menu(books)

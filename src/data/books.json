@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction to Python",
+    "author": "John Smith",
+    "year": "2023",
+    "status": "available"
+  },
+  {
+    "id": 2,
+    "title": "Data Structures",
+    "author": "Jane Doe",
+    "year": "2022",
+    "status": "available"
+  },
+  {
+    "id": 3,
+    "title": "Machine Learning",
+    "author": "Alice Johnson",
+    "year": "2024",
+    "status": "available"
+  }
+]
