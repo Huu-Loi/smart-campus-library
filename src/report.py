@@ -55,7 +55,7 @@ def overdue_report():
             try:
                 today = datetime.strptime(today_str, "%Y-%m-%d")
             except ValueError:
-                print("❌ Invalid date format! Use YYYY-MM-DD")
+                print("❌ Invalid date format. Use YYYY-MM-DD")
                 return
         
         # Find overdue loans
@@ -74,7 +74,7 @@ def overdue_report():
                     continue
         
         if not overdue_loans:
-            print("\n✅ No overdue loans! All books returned on time.")
+            print("\n✅ No overdue loans. All books returned on time.")
             return
         
         # Display overdue loans
@@ -173,7 +173,7 @@ def member_loan_history():
         # Get member ID
         member_id_str = input("\nEnter member ID: ").strip()
         if not member_id_str:
-            print("❌ Member ID cannot be empty!")
+            print("❌ Member ID cannot be empty.")
             return
         
         member_id = int(member_id_str)
@@ -181,7 +181,7 @@ def member_loan_history():
         # Find member
         member = find_by_id(members, member_id)
         if not member:
-            print(f"❌ Member ID {member_id} not found!")
+            print(f"❌ Member ID {member_id} not found.")
             return
         
         # Find member's loans
@@ -215,7 +215,7 @@ def member_loan_history():
         print()
         
     except ValueError:
-        print("❌ Member ID must be a number!")
+        print("❌ Member ID must be a number.")
     except Exception as e:
         print(f"❌ Error: {e}")
 
