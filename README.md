@@ -1,5 +1,5 @@
 # Library Management System — Project A
-**Course:** Software Engineering
+**Course:** Programming 1
 **Team:** Group A
 **Project Leader:** Huu Loi
 
@@ -9,7 +9,7 @@ The system helps the library manage books, users and the borrowing and returning
 ---
 1. Features
 
-Books Module (Leader)
+Books Module (Leader) 
 - Add new book
 - Edit book
 - Delete book
@@ -39,5 +39,6 @@ Reporting Module (Contribute 2)
 ---
 
 2. Project Structure
+
 
 
