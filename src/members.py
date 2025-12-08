@@ -1,8 +1,5 @@
-
-
 import json
 import os
-
 
 # File path
 MEMBERS_FILE = "data/members.json"
@@ -54,12 +51,12 @@ def add_member():
         
         name = input("Enter member name: ").strip()
         if not name:
-            print("❌ Name cannot be empty!")
+            print("❌ Name cannot be empty")
             return
         
         email = input("Enter email: ").strip()
         if not email:
-            print("❌ Email cannot be empty!")
+            print("❌ Email cannot be empty")
             return
         
         new_member = {
@@ -71,7 +68,7 @@ def add_member():
         members.append(new_member)
         save_members(members)
         
-        print(f"\n✅ Member added successfully!")
+        print(f"\n✅ Member added successfully")
         print(f"   ID: {new_id}")
         print(f"   Name: {name}")
         print(f"   Email: {email}")
@@ -87,7 +84,7 @@ def list_members():
     members = load_members()
     
     if not members:
-        print("👥 No members in the system.")
+        print(" No members in the system.")
         return
     
     print(f"Total members: {len(members)}\n")
@@ -116,20 +113,20 @@ def update_member():
     members = load_members()
     
     if not members:
-        print("👥 No members in the system.")
+        print(" No members in the system.")
         return
     
     try:
         member_id_str = input("Enter member ID to update: ").strip()
         if not member_id_str:
-            print("❌ Member ID cannot be empty!")
+            print("❌ Member ID cannot be empty")
             return
         
         member_id = int(member_id_str)
         
         member = find_member_by_id(members, member_id)
         if not member:
-            print(f"❌ Member ID {member_id} not found!")
+            print(f"❌ Member ID {member_id} not found")
             return
         
         print(f"\nCurrent information:")
@@ -147,10 +144,10 @@ def update_member():
             member["email"] = new_email
         
         save_members(members)
-        print(f"\n✅ Member ID {member_id} updated!")
+        print(f"\n✅ Member ID {member_id} updated")
         
     except ValueError:
-        print("❌ Member ID must be a number!")
+        print("❌ Member ID must be a number")
     except Exception as e:
         print(f"❌ Error: {e}")
 
@@ -162,20 +159,20 @@ def delete_member():
     members = load_members()
     
     if not members:
-        print("👥 No members in the system.")
+        print(" No members in the system.")
         return
     
     try:
         member_id_str = input("Enter member ID to delete: ").strip()
         if not member_id_str:
-            print("❌ Member ID cannot be empty!")
+            print("❌ Member ID cannot be empty")
             return
         
         member_id = int(member_id_str)
         
         member = find_member_by_id(members, member_id)
         if not member:
-            print(f"❌ Member ID {member_id} not found!")
+            print(f"❌ Member ID {member_id} not found")
             return
         
         print(f"\nMember to delete:")
@@ -188,12 +185,12 @@ def delete_member():
         if confirm == "yes" or confirm == "y":
             members.remove(member)
             save_members(members)
-            print(f"✅ Member ID {member_id} deleted!")
+            print(f"✅ Member ID {member_id} deleted")
         else:
             print("❌ Deletion cancelled.")
         
     except ValueError:
-        print("❌ Member ID must be a number!")
+        print("❌ Member ID must be a number")
     except Exception as e:
         print(f"❌ Error: {e}")
 
