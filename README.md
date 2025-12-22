@@ -1,44 +1,48 @@
-# Library Management System — Project A
-**Course:** Programming 1
-**Team:** Group A
-**Project Leader:** Huu Loi
+Library Management System — Project A
+Course: Programming 1
+Team: Group A
+Project Leader: Huu Loi
 
-Library Management System is built in Python, running on command line interface (CLI).
-The system helps the library manage books, users and the borrowing and returning process simply and effectively.
+This Library Management System is a command-line application written in Python.
+It helps manage books, members, and borrowing activities using JSON file storage.
 
----
-1. Features
+Features
 
-Books Module (Leader) 
-- Add new book
-- Edit book
-- Delete book
-- Show book list
-- Auto generate ID
-- Book status: `available = true/false`
+Books Module (Contributor 1)
+- Add, edit, delete books
+- View book list
+- Auto-generate book ID
+- Track availability status
 
-Members Module (Contribute 1)
-- Add member
-- Edit information
-- Delete member
+Members Module (Contributor 1)
+- Add, edit, delete members
 - View member list
 
-Loans Module (Leader)
-- Borrow book
-- Return book
-- Check book status before borrowing
-- Do not lend borrowed book
-- Automatically update `available`
-- Save borrowing/return history to JSON
+Loans Module (Contributor 2)
+- Borrow and return books
+- Check availability before borrowing
+- Prevent borrowing unavailable books
+- Automatically update book status
+- Save loan history to JSON
 
-Reporting Module (Contribute 2)
-- Book statistics
-- Borrowing statistics
-- Export basic reports
+Reporting Module (Contributor 2)
+- Book and borrowing statistics
+- Basic reports
 
----
+Project Leader Responsibilities
+- System design and pseudocode
+- Task assignment
+- GitHub repository management
+- Code review and integration
 
-2. Project Structure
+How to Run
+- Open terminal in project folder
+- Run: python main.py
 
-
-
+Project Structure
+- main.py
+- books.py
+- members.py
+- loans.py
+- reports.py
+- data/*.json
