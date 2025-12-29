@@ -48,10 +48,6 @@ Project Leader Responsibilities
 - GitHub repository management
 - Code review and integration
 
-How to Run
-- Open terminal in project folder
-- Run: python main.py
-
 Project Structure
 - main.py
 - books.py
@@ -59,4 +55,5 @@ Project Structure
 - loans.py
 - reports.py
 - data/*.json
+
 
