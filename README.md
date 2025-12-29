@@ -1,7 +1,20 @@
-Library Management System — Project A
-Course: Programming 1
-Team: Group A
-Project Leader: Huu Loi
+# Library Management System
+
+## Project Overview
+This is a command-line application for Programming 1 (CIS_1702).It manages books, members, and loans using JSON for persistent data storage.
+
+## Team Members
+**Huu Loi**: Project Leader - System design, GitHub management, integration.
+**Phan Duy**: Books & Members Modules.
+**My Hoa**: Loans & Reporting Modules.
+
+## How to Run
+1. Ensure you have **Python 3.x** installed on your system.
+2. Open your terminal or command prompt.
+3. Navigate to the project root directory.
+4. Run the following command:
+   ```bash
+   python main.py
 
 This Library Management System is a command-line application written in Python.
 It helps manage books, members, and borrowing activities using JSON file storage.
@@ -46,3 +59,4 @@ Project Structure
 - loans.py
 - reports.py
 - data/*.json
+
