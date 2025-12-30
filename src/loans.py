@@ -42,7 +42,10 @@ def borrow_book():
         return
 
     # Check if member exists
-    member = next((m for m in data["members"] if m["id"] == member_id), None)
+    member = next(
+        (m for m in data["members"] if str(m["id"]) == str(member_id)),
+        None
+    )
     if not member:
         print("❌ Member not found")
         return
@@ -110,3 +113,4 @@ def list_loans():
         status = "Returned" if l["returned"] else "Not returned"
         print(f"[{l['id']}] Book={l['book_id']} | Member={l['member_id']} | "
               f"{l['borrow_date']} → {l['due_date']} | {status}")
+
